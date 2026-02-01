@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رزومه شخصی | توسعه‌دهنده</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+        <span class="icon">🌙</span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">محمد عبادی فر</div>
+        <ul class="nav-links">
+            <li><a href="#home">خانه</a></li>
+            <li><a href="#about">درباره من</a></li>
+            <li><a href="#skills">مهارت‌ها</a></li>
+            <li><a href="#projects">پروژه‌ها</a></li>
+            <li><a href="#contact">تماس</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting reveal">سلام، من هستم</p>
+                <h1 class="name reveal">نام شما</h1>
+                <h2 class="typing-container">
+                    <span class="typing-text" id="typing"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="description reveal">
+                    یک توسعه‌دهنده علاقه‌مند به ساخت تجربه‌های دیجیتال خلاقانه و کاربردی
+                </p>
+                <div class="hero-buttons reveal">
+                    <a href="#projects" class="btn btn-primary">پروژه‌های من</a>
+                    <a href="#contact" class="btn btn-outline">تماس با من</a>
+                </div>
+                <div class="social-links reveal">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+            <div class="hero-image reveal">
+                <div class="image-container">
+                    <img src="images/profile.png" alt="Profile" class="profile-img">
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>اسکرول کنید</span>
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">01.</span>
+                درباره من
+            </h2>
+            <div class="about-content">
+                <div class="about-image reveal">
+                    <img src="images/about.png" alt="About Me">
+                    <div class="experience-badge">
+                        <span class="number">+5</span>
+                        <span class="text">سال تجربه</span>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <p>
+                        من یک توسعه‌دهنده Full Stack با بیش از ۵ سال تجربه در طراحی و توسعه
+                        اپلیکیشن‌های وب هستم. علاقه‌مند به یادگیری تکنولوژی‌های جدید و
+                        ساخت محصولات دیجیتال که تأثیر مثبتی در زندگی کاربران داشته باشد.
+                    </p>
+                    <p>
+                        تخصص من در JavaScript، React، Node.js و طراحی رابط کاربری است.
+                        به کار تیمی و حل مسائل پیچیده علاقه زیادی دارم.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-count="50">0</span>+
+                            <span class="stat-label">پروژه تکمیل شده</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="30">0</span>+
+                            <span class="stat-label">مشتری راضی</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-count="5">0</span>+
+                            <span class="stat-label">سال تجربه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">02.</span>
+                مهارت‌ها
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon">⚡</div>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Vue.js</span>
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>REST API</span>
+                        <span>GraphQL</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Database</h3>
+                    <div class="skill-tags">
+                        <span>MongoDB</span>
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                        <span>Redis</span>
+                        <span>Firebase</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>ابزارها</h3>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>Docker</span>
+                        <span>Linux</span>
+                        <span>AWS</span>
+                        <span>Figma</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">03.</span>
+                پروژه‌ها
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="images/project1.png" alt="Project 1">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">مشاهده</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>فروشگاه آنلاین</h3>
+                        <p>یک پلتفرم فروشگاهی کامل با سبد خرید و پرداخت آنلاین</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="images/project2.png" alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">مشاهده</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>اپلیکیشن مدیریت وظایف</h3>
+                        <p>ابزار مدیریت پروژه با قابلیت همکاری تیمی</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Express</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="images/project3.png" alt="Project 3">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">مشاهده</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>داشبورد تحلیلی</h3>
+                        <p>داشبورد مدیریتی با نمودارهای تعاملی</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title reveal">
+                <span class="title-number">04.</span>
+                تماس با من
+            </h2>
+            <div class="contact-content">
+                <div class="contact-info reveal">
+                    <h3>بیایید با هم کار کنیم!</h3>
+                    <p>آماده همکاری در پروژه‌های جدید و چالش‌برانگیز هستم.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>email@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>۰۹۱۲-۳۴۵-۶۷۸۹</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>تهران، ایران</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form reveal">
+                    <div class="form-group">
+                        <input type="text" placeholder="نام شما" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="ایمیل شما" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="پیام شما" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">ارسال پیام</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>ساخته شده با 💚 | ۱۴۰۴</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
